@@ -15,17 +15,17 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        .wrapper{
+
+            .workshop-name{
+                text-align: center;
+                border: solid $grey 1px;
+                background-color: $green;
+              
+            }
+        }
     }
  }
 
- .wrapper{
-    display: flex;
-    justify-content: center;
-}
-.workshop-name{
-    text-align: center;
-    border: solid $grey 1px;
-    background-color: $green;
-    width: 50%;
-    left: 50%;
-}
+

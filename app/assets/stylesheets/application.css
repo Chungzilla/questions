@@ -8,16 +8,9 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-
-.wrapper {
-  display: flex;
-  justify-content: center; }
-
-.workshop-name {
-  text-align: center;
-  border: solid #747474 1px;
-  background-color: #C4F8C1;
-  width: 50%;
-  left: 50%; }
+    html .container .wrapper .workshop-name {
+      text-align: center;
+      border: solid #747474 1px;
+      background-color: #C4F8C1; }
 
 /*# sourceMappingURL=application.css.map */
