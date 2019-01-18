@@ -1,13 +1,18 @@
 <h1>
-    Facilitators
+    Which workshop are you facilitating?
 </h1>
 
-<% @facilitator.each do |single_facilitator| %>
+<% @workshop.each do |single_workshop| %>
     <h2>
-        <%= single_facilitator.first_name %>
+        <%= link_to single_workshop.name, workshop_path(single_workshop.id) %>
     </h2>
 <% end %><br>
 
-<%= link_to 'Add New Facilitator', new_facilitator_path %> 
+<%= link_to 'Add New Workshop', new_workshop_path %> 
 
-<%= link_to 'facilitators', facilitators_path %> 
+<%= link_to 'Facilitators', facilitators_path %>  
+
+<%= link_to 'Attendees', attendees_path %> 
+
+
+

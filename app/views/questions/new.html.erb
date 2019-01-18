@@ -9,10 +9,7 @@
         <%= f.select :workshop_id, Workshop.all.map{|x|[x.name, x.id]} %>
     </div>
 
-    <div class="form-group"> 
-        <label for="attendee">Attendee:</label> 
-        <%= f.select :attendee_id, Attendee.all.map{|x|[x.first_name, x.id]} %>
-    </div>
+
 
     <div> <%= f.button :submit %> </div>
 <% end %>
