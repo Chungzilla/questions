@@ -1,6 +1,7 @@
 class FacilitatorsController < ApplicationController
     def index
         @facilitator = Facilitator.all
+        @workshop = Workshop.all
     end
 
     def new
