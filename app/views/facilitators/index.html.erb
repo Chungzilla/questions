@@ -1,0 +1,13 @@
+<h1>
+    Facilitators
+</h1>
+
+<% @facilitator.each do |single_facilitator| %>
+    <h2>
+        <%= single_facilitator.first_name %>
+    </h2>
+<% end %><br>
+
+<%= link_to 'Add New Facilitator', new_facilitator_path %> 
+
+<%= link_to 'facilitators', facilitators_path %> 

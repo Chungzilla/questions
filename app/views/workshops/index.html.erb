@@ -1,0 +1,15 @@
+<h1>
+    Which workshop are you attanding?
+</h1>
+
+<% @workshop.each do |single_workshop| %>
+    <h2>
+        <%= link_to single_workshop.name, {:action => 'show', :id => single_workshop.id} %>
+    </h2>
+<% end %><br>
+
+<%= link_to 'Add New Workshop', new_workshop_path %> 
+
+<%= link_to 'Facilitators', facilitators_path %>  
+
+<%= link_to 'Attendees', attendees_path %> 

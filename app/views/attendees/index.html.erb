@@ -1,0 +1,13 @@
+<h1>
+    Attendees
+</h1>
+
+<% @attendee.each do |single_attendee| %>
+    <h2>
+        <%= single_attendee.first_name %>
+    </h2>
+<% end %><br>
+
+<%= link_to 'Add New Attendee', new_attendee_path %> 
+
+<%= link_to 'Attendees', attendees_path %> 
