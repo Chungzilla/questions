@@ -8,9 +8,18 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    html .container .wrapper .workshop-name {
+    html .container .workshop-wrapper .workshop-name {
       text-align: center;
       border: solid #747474 1px;
       background-color: #C4F8C1; }
+    html .container .question-wrapper {
+      color: #FCFCFC;
+      background-color: #747474; }
+      html .container .question-wrapper .question {
+        color: #747474;
+        margin: 10px;
+        padding: 5px;
+        border: solid #FCFCFC 1px;
+        background-color: #FCFCFC; }
 
 /*# sourceMappingURL=application.css.map */

@@ -1,17 +1,11 @@
-<%= form_for @question do |f|%>
+<%= form_for [@workshop, @question] do |f| %>
+
     <div class="form-group"> 
-        <label for="name">question Name:</label>
+        <label for="name">Ask a Question</label>
         <%= f.text_field :query %>
     </div>
-
-    <div class="form-group"> 
-        <label for="workshop">Workshop:</label> 
-        <%= f.select :workshop_id, Workshop.all.map{|x|[x.name, x.id]} %>
-    </div>
-
 
 
     <div> <%= f.button :submit %> </div>
 <% end %>
 
-<%= link_to 'questions', questions_path %> 

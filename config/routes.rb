@@ -3,8 +3,10 @@ Rails.application.routes.draw do
 
   get 'home/index'
 
-  resources :workshops
-  resources :questions
+  resources :workshops do
+    resources :questions
+  end
+  
   resources :archives
   resources :facilitators
   resources :attendees
