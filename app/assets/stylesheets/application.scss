@@ -1,0 +1,44 @@
+
+ @import 'colors';
+
+ html{
+     color: $grey;
+
+
+     a{
+         text-decoration: none;
+         color: $grey;
+     }
+     
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .workshop-wrapper{
+
+            .workshop-name{
+                text-align: center;
+                border: solid $grey 1px;
+                background-color: $green;
+              
+            }
+        }
+
+        .question-wrapper{
+            color: $platinum;
+            background-color: $grey;
+            .question{
+                color: $grey;
+                margin: 10px;
+                padding: 5px;
+                border: solid $platinum 1px;
+                background-color: $platinum;
+              
+            }
+        }
+    }
+ }
+
+

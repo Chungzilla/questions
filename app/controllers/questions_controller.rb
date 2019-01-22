@@ -4,17 +4,21 @@ class QuestionsController < ApplicationController
     end
 
     def new
+        @workshop = Workshop.find(params[:workshop_id])
         @question = Question.new
+        
     # method: get
     # action: index
     # template: questions/neq.html.erb
     end
 
     def create
-        @question = Question.new(question_params)
+        @workshop = Workshop.find(params[:workshop_id])
+        @question = @workshop.questions.create(question_params)
  
+      
         if @question.save
-            redirect_to questions_path
+            redirect_to new_workshop_question_path(@workshop)
         else
             render 'new'
         end
@@ -22,6 +26,6 @@ class QuestionsController < ApplicationController
 
     private
         def question_params
-            params.require(:question).permit(:query, :attendee_id, :workshop_id)
+            params.require(:question).permit(:query, :workshop_id)
         end
 end

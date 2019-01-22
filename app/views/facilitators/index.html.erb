@@ -1,18 +1,24 @@
-<h1>
-    Which workshop are you facilitating?
-</h1>
+<div class="workshop-wrapper">
+    <h3>
+        Which workshop are you facilitating?
+    </h3>
 
-<% @workshop.each do |single_workshop| %>
-    <h2>
-        <%= link_to single_workshop.name, workshop_path(single_workshop.id) %>
-    </h2>
-<% end %><br>
+    <% @workshop.each do |single_workshop| %>
+        
+        <div class="workshop-name">
+            <h2>
+                <%= link_to single_workshop.name, workshop_path(single_workshop.id) %>
+            </h2>
+        </div>
+    <% end %>
+
+</div>
+<br>
+
 
 <%= link_to 'Add New Workshop', new_workshop_path %> 
 
-<%= link_to 'Facilitators', facilitators_path %>  
 
-<%= link_to 'Attendees', attendees_path %> 
 
 
 
